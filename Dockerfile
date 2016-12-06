@@ -2,6 +2,7 @@ FROM alpine:3.4
 
 RUN set -ex \
     && echo "http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \
+    && apk update \
     && apk add --no-cache \
     tcpdump \
     bridge-utils \
